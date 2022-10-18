@@ -2,7 +2,7 @@
 This module takes care of starting the API Server, Loading the DB and Adding the endpoints.
 
 Imprtamos los from flask_jwt_extended import JWTManager
-from models import User. Es lo necesario para que funcione JWT.
+. Es lo necesario para que funcione JWT.
 """
 import os
 from flask import Flask, request, jsonify, url_for, send_from_directory
