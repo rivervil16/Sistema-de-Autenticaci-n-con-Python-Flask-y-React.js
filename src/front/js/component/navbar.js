@@ -4,9 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 export const Navbar = () => {
   const navigate = useNavigate();
   useEffect(() => {
-    if (!localStorage.getItem("token")) {
-      return navigate("/login");
-    } else {
+    if (localStorage.getItem("token")) {
       return navigate("/demo");
     }
   }, []);
